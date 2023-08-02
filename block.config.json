@@ -12,5 +12,22 @@
   "supportedAppblockVersions": [
     "1.0.0"
   ],
-  "repoType": "mono"
+  "repoType": "mono",
+  "dependencies": {
+    "_hap_be_firstFunction": {
+      "directory": "_hap_be_firstFunction"
+    },
+    "_hap_fe_firstContainer": {
+      "directory": "_hap_fe_firstContainer"
+    },
+    "_hap_fe_firstUiElements": {
+      "directory": "_hap_fe_firstUiElements"
+    },
+    "_hap_fe_firstPackage": {
+      "directory": "_hap_fe_firstPackage"
+    },
+    "_hap_fe_firstSharedFunction": {
+      "directory": "_hap_fe_firstSharedFunction"
+    }
+  }
 }

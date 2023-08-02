@@ -1,0 +1,18 @@
+{
+  "blockId": "uRQLtr0xsU84FD1mDJWS6",
+  "name": "_hap_fe_firstPackage",
+  "type": "package",
+  "source": {
+    "https": "https://github.com/happilee-app/happilee_dev.git",
+    "ssh": "git@github.com:happilee-app/happilee_dev.git",
+    "branch": "block__hap_fe_firstPackage"
+  },
+  "parentBlockIDs": [
+    "iv8nGRwH7WoG0T1qVIcuV"
+  ],
+  "repoType": "mono",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": false
+}

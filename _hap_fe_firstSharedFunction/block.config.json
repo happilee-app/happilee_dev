@@ -1,0 +1,20 @@
+{
+  "blockId": "Hxjbjmcx2JRWqX3WWGvKK",
+  "name": "_hap_fe_firstSharedFunction",
+  "type": "shared-fn",
+  "source": {
+    "https": "https://github.com/happilee-app/happilee_dev.git",
+    "ssh": "git@github.com:happilee-app/happilee_dev.git",
+    "branch": "block__hap_fe_firstSharedFunction"
+  },
+  "parentBlockIDs": [
+    "iv8nGRwH7WoG0T1qVIcuV"
+  ],
+  "repoType": "mono",
+  "language": "nodejs",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": false,
+  "start": "node index.js"
+}
