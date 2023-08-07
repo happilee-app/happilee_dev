@@ -12,5 +12,10 @@
   "supportedAppblockVersions": [
     "1.0.0"
   ],
-  "repoType": "mono"
+  "repoType": "mono",
+  "dependencies": {
+    "_hap_fe_commonLib": {
+      "directory": "_hap_fe_commonLib"
+    }
+  }
 }
