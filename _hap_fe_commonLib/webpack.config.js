@@ -41,12 +41,7 @@ export default {
       },
       {
         test: /\.scss$/,
-        use: [
-          'style-loader', // Injects CSS into the DOM
-          'css-loader', // Translates CSS into CommonJS
-          'postcss-loader', // Apply PostCSS transformations
-          'sass-loader', // Compiles Sass to CSS
-        ],
+        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
       },
       {
         test: /.m?js/,
