@@ -9,7 +9,9 @@
   },
   "parentBlockIDs": [],
   "isPublic": false,
-  "supportedAppblockVersions": ["1.0.0"],
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
   "repoType": "mono",
   "dependencies": {
     "_hap_be_copyFlow": {
@@ -17,6 +19,9 @@
     },
     "_hap_fe_commonLib": {
       "directory": "_hap_fe_commonLib"
+    },
+    "_hap_fe_container": {
+      "directory": "_hap_fe_container"
     }
   }
 }
