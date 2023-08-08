@@ -30,17 +30,9 @@ describe('Button', () => {
     })
   })
 
-  it('Should Render as primary button', async () => {
+  it('Should Render as default  button class', async () => {
     await waitFor(() => {
-      expect(button).toHaveClass('btn btn-primary')
-    })
-  })
-  it('Should Render as secondary button', async () => {
-    renderResult.unmount()
-    renderResult = render(<Button />)
-    button = renderResult.getByLabelText('button')
-    await waitFor(() => {
-      expect(button).toHaveClass('btn btn-secondary')
+      expect(button).toHaveClass('btn')
     })
   })
 })

@@ -1,17 +1,14 @@
-import React, { MouseEventHandler } from 'react'
+import React from 'react'
 interface ButtonProps {
   className?: string
   id?: string
-  primary?: boolean
   label?: string
-  onClick?: MouseEventHandler<HTMLButtonElement> | undefined
+  onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
 const Button: React.FC<ButtonProps> = ({
   className = '',
-
   id = 'button',
-  primary = false,
   label = 'Click Me',
   onClick = () => void {},
   ...restProps
@@ -21,8 +18,7 @@ const Button: React.FC<ButtonProps> = ({
       {...restProps}
       onClick={(event) => onClick(event)}
       aria-label="button"
-      className={`${className} btn ${primary ? 'btn-primary ' : ' btn-secondary '}
-    `}
+      className={`${className} btn      `}
       id={id}
     >
       {label}
