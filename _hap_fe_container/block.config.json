@@ -1,0 +1,21 @@
+{
+  "blockId": "LY2h5m708-s_t37iimcPn",
+  "name": "_hap_fe_container",
+  "type": "ui-container",
+  "source": {
+    "https": "https://github.com/happilee-app/happilee_dev.git",
+    "ssh": "git@github.com:happilee-app/happilee_dev.git",
+    "branch": "block__hap_fe_container"
+  },
+  "parentBlockIDs": [
+    "iv8nGRwH7WoG0T1qVIcuV"
+  ],
+  "repoType": "mono",
+  "language": "js",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": false,
+  "start": "npx webpack-dev-server",
+  "build": "npx webpack"
+}
