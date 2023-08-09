@@ -16,7 +16,7 @@ const Input: React.FC<InputProps> = ({
   name = 'name',
   id = 'id',
   placeHolder = 'Enter',
-  error = 'error',
+  error = '',
   onChange = () => {},
 }) => {
   return (
