@@ -10,7 +10,8 @@
     "coverage": "jest --coverage",
     "lint:fix": "npx eslint *.js --fix",
     "format": "npx prettier ./**/*{.js,.ts,.tsx,.json} --write",
-    "pre-commit": "npx lint-staged"
+    "pre-commit": "npx lint-staged",
+    "live": "webpack serve --open --mode development --live-reload --hot"
   },
   "lint-staged": {
     "*.js": [
