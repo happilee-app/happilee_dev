@@ -1,4 +1,6 @@
+// @ts-ignore
 import React from 'react'
+
 interface ButtonProps {
   className?: string
   id?: string
@@ -7,6 +9,11 @@ interface ButtonProps {
   onClick?: (event: React.MouseEvent<HTMLButtonElement>) => void
 }
 
+/**
+ * @namespace CommonLib
+ * @param {ButtonProps} Props
+ * @returns {React.JSX.Element}
+ */
 const Button: React.FC<ButtonProps> = ({
   className = '',
   id = 'button',
@@ -14,18 +21,16 @@ const Button: React.FC<ButtonProps> = ({
   color = '#0B3966',
   onClick = () => void {},
   ...restProps
-}) => {
-  return (
-    <button
-      {...restProps}
-      onClick={(event) => onClick(event)}
-      aria-label="button"
-      className={`${className} btn bg-[${color}] `}
-      id={id}
-    >
-      {label}
-    </button>
-  )
-}
+}: ButtonProps): React.JSX.Element => (
+  <button
+    {...restProps}
+    onClick={(event) => onClick(event)}
+    aria-label="button"
+    className={`${className} btn bg-[${color}] `}
+    id={id}
+  >
+    {label}
+  </button>
+)
 
 export { Button }

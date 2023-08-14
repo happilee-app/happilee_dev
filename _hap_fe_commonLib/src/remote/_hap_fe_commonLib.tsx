@@ -1,9 +1,8 @@
 import React from 'react'
-
 import Button from './component/Button'
 import Input from './component/Input'
 
-export const _hap_fe_commonlib: React.FC = () => {
+export const _hap_fe_commonlib = () => {
   return (
     <div className=" flex flex-col" aria-label="remote">
       Hello from _hap_fe_commonLib

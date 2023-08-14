@@ -11,7 +11,7 @@ env.init()
 
 const __dirname = path.resolve()
 
-const port = 3000
+const port = 4000
 
 export default {
   entry: './src/index',
@@ -40,8 +40,23 @@ export default {
         },
       },
       {
-        test: /\.scss$/,
-        use: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
+        test: /\.css$/,
+        use: ['postcss-loader', 'style-loader', 'css-loader'],
+      },
+      {
+        test: /\.s[ac]ss$/i,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              import: true,
+              importLoaders: true,
+            },
+          },
+          'postcss-loader',
+          'sass-loader',
+        ],
       },
       {
         test: /.m?js/,
