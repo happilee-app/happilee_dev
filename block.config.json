@@ -1,0 +1,20 @@
+{
+  "blockId": "cIwgEByN9UfWQpRPB6rpV",
+  "name": "_hap_be_firstFunction",
+  "type": "function",
+  "source": {
+    "https": "https://github.com/happilee-app/happilee_dev.git",
+    "ssh": "git@github.com:happilee-app/happilee_dev.git",
+    "branch": "block__hap_be_firstFunction"
+  },
+  "parentBlockIDs": [
+    "iv8nGRwH7WoG0T1qVIcuV"
+  ],
+  "repoType": "mono",
+  "language": "nodejs",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": false,
+  "start": "node index.js"
+}
