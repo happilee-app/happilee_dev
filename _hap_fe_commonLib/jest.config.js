@@ -8,9 +8,6 @@ const config = {
     '^.+.(js|ts)$': 'babel-jest',
     '^.+.(jsx|tsx)$': 'babel-jest',
   },
-  moduleNameMapper: {
-    '\\.(scss)$': 'identity-obj-proxy',
-  },
 }
 
 export default config

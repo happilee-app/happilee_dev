@@ -19,4 +19,34 @@
       @apply text-red-600;
     }
   }
+  .otpContainer {
+    @apply flex flex-col pt-3 items-start gap-2 self-stretch w-fit h-[4.625rem] px-1;
+    &__input {
+      @apply flex flex-row gap-2;
+      &__main {
+        @apply bg-[inherit];
+        > input {
+          @apply h-10 w-10 rounded-lg outline-none border text-center;
+        }
+        > span {
+          @apply pl-2;
+        }
+      }
+    }
+    &__message {
+      @apply w-auto;
+      > span {
+        @apply text-xs;
+      }
+    }
+  }
+  .brd {
+    @apply border-solid rounded-lg border-[0.0938rem];
+    &--error {
+      @apply border-[#E05151];
+    }
+    &--success {
+      @apply border-[#28B53E];
+    }
+  }
 }

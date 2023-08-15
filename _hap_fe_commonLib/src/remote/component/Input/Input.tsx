@@ -1,4 +1,4 @@
-import React, { ChangeEvent } from 'react'
+import React, { ChangeEvent, ReactNode } from 'react'
 
 interface InputProps {
   className?: string
@@ -10,6 +10,7 @@ interface InputProps {
   placeHolder?: string
   value?: string | number
   onChange?: (event: ChangeEvent<HTMLInputElement>) => void
+  children?: ReactNode
 }
 /**
  * @namespace CommonLib
@@ -24,6 +25,7 @@ const Input: React.FC<InputProps> = ({
   placeHolder = 'Enter',
   error = '',
   onChange = () => {},
+  children,
   ...restProps
 }: InputProps): React.JSX.Element => {
   return (
@@ -40,6 +42,7 @@ const Input: React.FC<InputProps> = ({
           placeholder={placeHolder}
           onChange={(event) => onChange(event)}
         />
+        {children}
       </div>
       <span aria-label="error" className="inputContainer__error">
         {error}
