@@ -203,7 +203,9 @@ const OtpInput: React.FC<OtpInputProps> = ({
               inputMode="text"
             />
             {separator !== '' ? (
-              <span>{index < length - 1 && (typeof separator === 'function' ? separator(index) : separator)}</span>
+              <span aria-label="otp-separator">
+                {index < length - 1 && (typeof separator === 'function' ? separator(index) : separator)}
+              </span>
             ) : null}
           </div>
         ))}

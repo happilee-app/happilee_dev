@@ -70,14 +70,24 @@ describe('OptInput', () => {
     renderResult = render(<OtpInput length={6} value="" onChange={onChange} />)
     const _result = renderResult.getAllByRole('textbox')
     const otp = '123456'
-    act(() => {
+    await act(async () => {
       otp.split('').forEach((ele, index) => {
-        fireEvent.change(_result[index], { target: { value: ele } })
+        fireEvent.change(_result[index], { target: { value: ele, name: `test-${index}` } })
       })
-      fireEvent.keyDown(_result[5], { key: 'Backspace' })
     })
+    fireEvent.keyDown(_result[5], { key: 'Backspace' })
     await waitFor(() => {
       expect(_result[5].value).toBe('')
+    })
+  })
+  it('Should have a separator(-)', async () => {
+    renderResult.unmount()
+    renderResult = render(<OtpInput separator="-" />)
+    const _result = renderResult.getAllByLabelText('otp-separator')
+    await waitFor(() => {
+      _result.forEach((element) => {
+        expect(element).toBeInTheDocument()
+      })
     })
   })
 })
