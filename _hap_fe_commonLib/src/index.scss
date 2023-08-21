@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply rounded-[1.25rem] p-[0.75rem_1.5rem] inline-flex justify-center items-center gap-2;
+  }
+  .inputContainer {
+    @apply flex flex-col justify-center items-start gap-2;
+    color: #36363699;
+    &__input {
+      @apply flex p-[0.5rem_0.75rem] items-center gap-2 self-stretch rounded-[0.5rem] bg-[#F3F3F3] h-[2.5rem];
+      > input {
+        @apply outline-none w-full h-full rounded-[inherit] bg-transparent text-black;
+      }
+    }
+    &__error {
+      @apply text-red-600;
+    }
+  }
+}
