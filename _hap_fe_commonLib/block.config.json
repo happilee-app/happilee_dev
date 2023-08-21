@@ -1,0 +1,21 @@
+{
+  "blockId": "oeWoRbROiWByoBNvFdeMR",
+  "name": "_hap_fe_commonLib",
+  "type": "ui-elements",
+  "source": {
+    "https": "https://github.com/happilee-app/happilee_dev.git",
+    "ssh": "git@github.com:happilee-app/happilee_dev.git",
+    "branch": "block__hap_fe_commonLib"
+  },
+  "parentBlockIDs": [
+    "iv8nGRwH7WoG0T1qVIcuV"
+  ],
+  "repoType": "mono",
+  "language": "js",
+  "supportedAppblockVersions": [
+    "1.0.0"
+  ],
+  "isPublic": false,
+  "start": "npx webpack-dev-server",
+  "build": "npx webpack"
+}
