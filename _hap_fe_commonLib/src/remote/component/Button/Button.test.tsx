@@ -9,7 +9,7 @@ let handleClick: () => void
 describe('Button', () => {
   beforeEach(() => {
     handleClick = jest.fn()
-    renderResult = render(<Button onClick={handleClick} label="Button" id="test-id" primary />)
+    renderResult = render(<Button onClick={handleClick} label="Button" id="test-id" />)
     button = renderResult.getByLabelText('button')
   })
   afterEach(() => {
