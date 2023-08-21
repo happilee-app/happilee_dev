@@ -6,7 +6,7 @@
   "scripts": {
     "sass": "npx node-sass src/style/global.scss src/style/global.css",
     "build:tailwind": "tailwindcss build src/style/global.css -o src/style/index.css",
-    "start": "npm run sass && npm run build:tailwind &&  webpack-dev-server",
+    "start": "webpack-dev-server",
     "build": "webpack --mode production",
     "test": "jest --watch",
     "coverage": "jest --coverage",

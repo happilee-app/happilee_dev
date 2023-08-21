@@ -73,6 +73,10 @@ export default {
           loader: 'url-loader',
         },
       },
+      {
+        test: /\.json$/,
+        use: 'json-loader', // Use the json-loader
+      },
     ],
   },
   plugins: [

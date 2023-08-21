@@ -1,21 +1,23 @@
-import i18next from 'i18next'
 import React from 'react'
 import { ErrorBoundary } from 'react-error-boundary'
+import { I18nextProvider } from 'react-i18next'
 import AppRoute from './remote/common/routes/appRoute'
+import i18n from './remote/i18n'
 const App = () => {
   const handleError = (error: any, errorInfo: any) => {
     // handle error
     console.log(error, errorInfo)
   }
 
-  const isRTL = i18next.dir() === 'rtl'
   return (
     <ErrorBoundary fallback={<ErrorFallback />} onError={handleError}>
-      <div className="App" dir={isRTL ? 'rtl' : 'ltr'} data-testid="app">
-        <React.Suspense fallback="">
-          <AppRoute />
-        </React.Suspense>
-      </div>
+      <I18nextProvider i18n={i18n}>
+        <div className="App" data-testid="app" translate="yes">
+          <React.Suspense fallback="">
+            <AppRoute />
+          </React.Suspense>
+        </div>
+      </I18nextProvider>
     </ErrorBoundary>
   )
 }

@@ -13,7 +13,7 @@ export const _hap_fe_commonlib = () => {
       Hello from _hap_fe_commonLib
       {/* <Button className="bg-bold-primary text-red-600 bg-fuchsia-500" label="click Me" />
       <Input /> */}
-      {/* <OtpInput value={otp} onChange={onchange} length={6} message="text" /> */}
+      <OtpInput value={otp} onChange={onchange} length={6} message="text" />
     </div>
   )
 }

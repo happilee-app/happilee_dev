@@ -77,6 +77,7 @@ describe('OptInput', () => {
     })
     fireEvent.keyDown(_result[5], { key: 'Backspace' })
     await waitFor(() => {
+      //@ts-ignore
       expect(_result[5].value).toBe('')
     })
   })
