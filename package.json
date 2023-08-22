@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@appblocks/bb-cli": "file:../BB-CLI"
+  }
+}

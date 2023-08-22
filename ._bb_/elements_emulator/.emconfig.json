@@ -9,15 +9,15 @@
   "killed": false,
   "spawnfile": "npm",
   "_handle": {
-    "pid": 73886
+    "pid": 58365
   },
   "spawnargs": [
     "npm",
     "start",
     "--",
-    "--port=4000"
+    "--port=4002"
   ],
-  "pid": 73886,
+  "pid": 58365,
   "stdin": null,
   "stdout": null,
   "stderr": null,
