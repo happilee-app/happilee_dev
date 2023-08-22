@@ -5,6 +5,7 @@ bb_*
 .deploy
 .deployed.config.json
 headless-config.json
+._bb_
 
 # Logs
 logs
