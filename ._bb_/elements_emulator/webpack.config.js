@@ -26,7 +26,7 @@ const config = {
     historyApiFallback: true,
     hot: true,
     static: path.join(__dirname,'dist', 'bootstrap.js'),
-    port: 4000,
+    port: 4001,
     headers: {
       'Access-Control-Allow-Origin': '*',
       'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS',
