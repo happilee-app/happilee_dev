@@ -9,7 +9,7 @@
   "killed": false,
   "spawnfile": "npm",
   "_handle": {
-    "pid": 62948
+    "pid": 19632
   },
   "spawnargs": [
     "npm",
@@ -17,7 +17,7 @@
     "--",
     "--port=4001"
   ],
-  "pid": 62948,
+  "pid": 19632,
   "stdin": null,
   "stdout": null,
   "stderr": null,
